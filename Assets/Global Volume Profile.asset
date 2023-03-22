@@ -114,6 +114,29 @@ MonoBehaviour:
   - {fileID: 6434916094447242332}
   - {fileID: 5979902915115205819}
   - {fileID: -1122265047295710177}
+  - {fileID: 2449700528026098966}
+--- !u!114 &2449700528026098966
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95261e6ae3c754b48b0b3b5a72892201, type: 3}
+  m_Name: PixelateImageFilter
+  m_EditorClassIdentifier: 
+  active: 1
+  BlockSize:
+    m_OverrideState: 1
+    m_Value: 6
+  ShowInSceneView:
+    m_OverrideState: 1
+    m_Value: 1
+  FilterComputeShaderParameter:
+    m_OverrideState: 1
+    m_Value: {fileID: 7200000, guid: 8d8ea122f5b940842a1caf4881867a16, type: 3}
 --- !u!114 &5979902915115205819
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -128,8 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &6434916094447242332
 MonoBehaviour:
   m_ObjectHideFlags: 3

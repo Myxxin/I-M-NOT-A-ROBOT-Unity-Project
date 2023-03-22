@@ -70,11 +70,7 @@ MonoBehaviour:
     PublicKeyToken=null
   afterPostProcessBlursCustomPostProcesses: []
   afterPostProcessCustomPostProcesses:
-  - Kino.PostProcessing.Glitch, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
   - Kino.PostProcessing.Recolor, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  - Kino.PostProcessing.Sharpen, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   - Kino.PostProcessing.Overlay, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
@@ -83,6 +79,10 @@ MonoBehaviour:
   - Kino.PostProcessing.TestCard, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   - Kino.PostProcessing.Utility, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Kino.PostProcessing.Sharpen, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Kino.PostProcessing.Glitch, Kino.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   - PixelateImageFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   beforeTAACustomPostProcesses: []

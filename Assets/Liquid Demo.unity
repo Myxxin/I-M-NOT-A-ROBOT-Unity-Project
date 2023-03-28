@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe820c5af7ce834bb279013a71dd089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Elements: 0
+  Elements: 3
   Embeddings: []
   SDFGrid: 
   ConstDataID: 
@@ -588,9 +588,10 @@ MonoBehaviour:
     m_Extent: {x: 0, y: 0, z: 0}
   EnableDownscale: 1
   DownscaleFactor: 0.2
-  InitialState: 0
-  BakedInitialStateAsset: {fileID: 0}
-  timestep: 0
+  InitialState: 1
+  BakedInitialStateAsset: {fileID: 4900000, guid: 9b09f022f6fd1264e99a836f767dd46d,
+    type: 3}
+  timestep: 0.79999995
   CurrentRenderingMode: 1
   CurrentInjectionPoint: 16
   reflectionProbeHDRP: {fileID: 1828199078}
@@ -654,6 +655,96 @@ MonoScript:
   m_ExecutionOrder: 0
   m_ClassName: SceneObjectIDMapSceneAsset
   m_Namespace: UnityEngine.Rendering.HighDefinition
+--- !u!1 &991975395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991975397}
+  - component: {fileID: 991975396}
+  m_Layer: 0
+  m_Name: AudioTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991975396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991975395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c3e183ec27ba64d83e010bf18edb92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useDefaultDevice: 0
+  _deviceID: '{0.0.1.00000000}.{e9ab932f-028c-49c4-93a2-51d384f75a35}'
+  _channel: 0
+  _filterType: 0
+  _autoGain: 1
+  _gain: 6
+  _dynamicRange: 12
+  _smoothFall: 1
+  _fallSpeed: 0.3
+  _propertyBinders:
+  - rid: 8992146483764789248
+  - rid: 8992146483764789252
+  - rid: 8992146483764789253
+  references:
+    version: 2
+    RefIds:
+    - rid: 8992146483764789248
+      type: {class: Vector3PropertyBinder, ns: Lasp, asm: Lasp.Runtime}
+      data:
+        Enabled: 1
+        Target: {fileID: 1996097224}
+        PropertyName: position
+        _propertyType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        Value0: {x: 0, y: -5, z: 0}
+        Value1: {x: 0, y: 5, z: 0}
+    - rid: 8992146483764789252
+      type: {class: Vector3PropertyBinder, ns: Lasp, asm: Lasp.Runtime}
+      data:
+        Enabled: 1
+        Target: {fileID: 1996097224}
+        PropertyName: position
+        _propertyType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        Value0: {x: 0, y: -10, z: 0}
+        Value1: {x: 0, y: 0, z: 0}
+    - rid: 8992146483764789253
+      type: {class: Vector3PropertyBinder, ns: Lasp, asm: Lasp.Runtime}
+      data:
+        Enabled: 1
+        Target: {fileID: 239096093}
+        PropertyName: position
+        _propertyType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        Value0: {x: 0, y: -10, z: 0}
+        Value1: {x: 0, y: 0, z: 0}
+--- !u!4 &991975397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991975395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993668149
 GameObject:
   m_ObjectHideFlags: 19
@@ -1599,7 +1690,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996097221}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb69f6ec2141c1543b90423af4399d0a, type: 3}
   m_Name: 

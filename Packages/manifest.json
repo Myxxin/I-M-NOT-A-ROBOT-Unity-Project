@@ -22,6 +22,8 @@
     "com.unity.visualscripting": "1.7.8",
     "jp.keijiro.kino.post-processing": "2.1.15",
     "jp.keijiro.klak.spout": "2.0.3",
+    "jp.keijiro.lasp": "2.1.6",
+    "jp.keijiro.laspvfx": "1.0.2",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

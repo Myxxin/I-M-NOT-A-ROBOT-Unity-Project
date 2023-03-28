@@ -168,9 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090e3e4eec7ad5a47b778575e0ede947, type: 3}
   m_Name: Glitch
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   block:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.001
   drift:
     m_OverrideState: 0

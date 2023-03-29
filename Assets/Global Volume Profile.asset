@@ -53,6 +53,31 @@ MonoBehaviour:
   scale:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &-6351488531853593985
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 638964c6a137fa54298d5976ac5673c7, type: 3}
+  m_Name: Slice
+  m_EditorClassIdentifier: 
+  active: 1
+  rowCount:
+    m_OverrideState: 1
+    m_Value: 46.65
+  angle:
+    m_OverrideState: 0
+    m_Value: 0
+  displacement:
+    m_OverrideState: 1
+    m_Value: 0
+  randomSeed:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &-5428205774594545243
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -171,7 +196,7 @@ MonoBehaviour:
   active: 1
   block:
     m_OverrideState: 0
-    m_Value: 0.001
+    m_Value: 0.085
   drift:
     m_OverrideState: 0
     m_Value: 0.029
@@ -207,6 +232,7 @@ MonoBehaviour:
   - {fileID: -8080082077536408586}
   - {fileID: 172959669203450193}
   - {fileID: -7582137443407261885}
+  - {fileID: -6351488531853593985}
 --- !u!114 &172959669203450193
 MonoBehaviour:
   m_ObjectHideFlags: 3

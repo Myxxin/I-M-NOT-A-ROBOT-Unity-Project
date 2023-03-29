@@ -8,7 +8,8 @@ public class Websocket_SimpleTest : MonoBehaviour
     void Start()
     {
         //URL: https://socketsbay.com/test-websockets
-        ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
+      //  ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
+        ws = new WebSocket("ws://10.0.0.6:8765");
         Debug.Log("Websocket created");
 
         //listening for a message

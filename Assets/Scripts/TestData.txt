@@ -1,6 +1,6 @@
 {
 	"messageType":"text",
-	"source": "Jonathan",
+	"source": "AI",
 	"chronoID":1,
-	"message":"message"
+	"message":"message incoming. Here is the text of the speaker. Lorem ipsum..."
 }

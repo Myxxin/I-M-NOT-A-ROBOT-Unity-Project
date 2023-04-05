@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{8e95d392-c71a-4050-8f81-e2d205e29e85}'
+  _deviceID: '{0.0.1.00000000}.{e9ab932f-028c-49c4-93a2-51d384f75a35}'
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{8e95d392-c71a-4050-8f81-e2d205e29e85}'
+  _deviceID: '{0.0.1.00000000}.{e9ab932f-028c-49c4-93a2-51d384f75a35}'
   _channel: 0
   _filterType: 0
   _autoGain: 1

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class chat2 : MonoBehaviour
+public class aiChat : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject parent;
@@ -13,22 +13,26 @@ public class chat2 : MonoBehaviour
     public List <float> textLengths;
 
     public string message; 
-    
-    void Update()
-    {
-        if (Input.GetKeyDown("space"))
-        {
 
+    private Color textColor = new Color(0f, 255f, 0f, 255f);
+
+    public GameObject master;
+    
+    public void pushMessage()
+    {
+            message = master.GetComponent<WebsocketReceiver>().rMessage.message.message_text;
+            
             GameObject newText = Instantiate(prefab, parent.transform);
 
             newText.GetComponent<TMP_Text>().text = message;
-            newText.GetComponent<TMP_Text>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
+            //newText.GetComponent<TMP_Text>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
+
+            newText.GetComponent<TMP_Text>().color = Random.ColorHSV(0.33f, 0.3f, 0.9f, 1f, 1f, 1f);
             texts.Add(newText);
             textLengths.Add(Mathf.Ceil(newText.GetComponent<TMP_Text>().text.Length / 62) + 1);
 
             for ( int i = 0; i < texts.Count -1; i++)
             {
-                print (i);
 
                 float factor;
                 if (i == texts.Count -1)
@@ -46,15 +50,23 @@ public class chat2 : MonoBehaviour
 
                 if (texts.Count >  14)
                 {   
-                    print ("Destrozý");
                     Destroy(texts[0]);
                     texts.RemoveAt(0);
+                    textLengths.RemoveAt(0);
 
                 }
 
            }
 
-        }
+        
+    }
+
+    public void test(){
+        Debug.Log("WHAT THE SHIT?!");
+        print("Master Text: " + master.GetComponent<WebsocketReceiver>().rMessage.message.message_text);
+        message = master.GetComponent<WebsocketReceiver>().rMessage.message.message_text;
+
+        pushMessage();
     }
 
 }

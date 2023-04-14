@@ -211,22 +211,6 @@ MonoBehaviour:
   FilterComputeShaderParameter:
     m_OverrideState: 1
     m_Value: {fileID: 7200000, guid: 8d8ea122f5b940842a1caf4881867a16, type: 3}
---- !u!114 &-4175562737242146240
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 072a01742614cc44a8eae57bdd8fabc0, type: 3}
-  m_Name: TestCard
-  m_EditorClassIdentifier: 
-  active: 0
-  opacity:
-    m_OverrideState: 1
-    m_Value: 1
 --- !u!114 &-2705727975613818498
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -272,7 +256,6 @@ MonoBehaviour:
   - {fileID: 7804337656170537849}
   - {fileID: 2147631801822875641}
   - {fileID: -4366991867727446415}
-  - {fileID: -4175562737242146240}
   - {fileID: -2705727975613818498}
   - {fileID: -5428205774594545243}
   - {fileID: -8080082077536408586}

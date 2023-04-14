@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 7974417}
   - component: {fileID: 7974416}
   - component: {fileID: 7974415}
+  - component: {fileID: 7974419}
   m_Layer: 5
   m_Name: LeftChat
   m_TagString: Untagged
@@ -223,6 +224,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &7974419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7974413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4745542509048433670, guid: ba98ae435572e03499dff432fe3de530, type: 3}
+  parent: {fileID: 7974413}
+  colorFadeFactor: 0.91
+  texts: []
+  textLengths: []
+  message: yolo
 --- !u!1 &68412467
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +385,7 @@ GameObject:
   - component: {fileID: 1461660230}
   - component: {fileID: 1461660229}
   - component: {fileID: 1461660232}
+  - component: {fileID: 1461660233}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -564,6 +584,26 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &1461660233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461660228}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebf452082d435144964a8d65c04e6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IDtext: {fileID: 0}
+  rMessage:
+    source: 
+    destination: 
+    booth_id: 0
+    message:
+      message_type: 
+      message_text: 
 --- !u!1 &1816460576
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,10 +717,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1560575362113938169, guid: a5d5297bc73da0644bd53eac02693cd4, type: 3}
+  prefab: {fileID: 4745542509048433670, guid: b32b0db55b5a65f43abbb943b444ee8d, type: 3}
   parent: {fileID: 1816460576}
   colorFadeFactor: 0.91
   texts: []
   textLengths: []
-  message: Select your preferred scripting language. All code snippets will be displayed
-    in this language.
+  message: hi

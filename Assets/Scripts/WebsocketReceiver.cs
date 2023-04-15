@@ -53,19 +53,19 @@ public class WebsocketReceiver : MonoBehaviour
     void Start()
     {
         print(incomingChat.GetComponent<aiChat>().message);
-        // unityStateMessage.booth_id = 1;
-        // unityStateMessage.source = "unity";
-        // unityStateMessage.state = "intro_finished";
+        unityStateMessage.booth_id = 1;
+        unityStateMessage.source = "unity";
+        unityStateMessage.state = "intro_finished";
 
         //unityMessage.booth_id = 1;
         unityMessage.source = "unity";
 
         //For Testing
         //URL: https://socketsbay.com/test-websockets
-         ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
+         //ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
 
         //For connecting to other mac
-        //ws = new WebSocket("ws://10.0.0.15:8765");
+        ws = new WebSocket("ws://10.0.0.15:8765");
 
 
         Debug.Log("Websocket created");
@@ -180,21 +180,39 @@ public class WebsocketReceiver : MonoBehaviour
                 Debug.Log("Start Intro");
                 break;
 
+                Timer starten;
+                Asset löst sich auf,
+                Ton spielt.
+                Video spielt nach timer.
+                Senden an Tech Team DONE;
+
             case "stop_intro":
                 Debug.Log("stop_intro");
                 break;
+
+                Kommt Hip Lip Anim,
+                Fertiges Textaudio spielt
+                (KEIN CHAT)
 
             case "start_variable_intro":
                 Debug.Log("start_variable_intro");
                 break;
 
+                Hip Lip transformiert zum Social Bot,
+
+
             case "stop_variable_intro":
                 Debug.Log("stop_variable_intro");
                 break;
 
+                Social Bot faded raus mit Audio,
+
             case "start_conversation_mode":
                 Debug.Log("start_conversation_mode");
                 break;
+
+                Entweder Hip Lip löst sich auf, oder der Social Bot.
+                AI Blob kommt
 
             case "stop_conversation_mode":
                 Debug.Log("stop_conversation_mode");
@@ -203,6 +221,8 @@ public class WebsocketReceiver : MonoBehaviour
             case "start_revelation_phase":
                 Debug.Log("start_revelation_phase");
                 break;
+
+                JANNNISSS???
 
             case "stop_revelation_phase":
                 Debug.Log("stop_revelation_phase");

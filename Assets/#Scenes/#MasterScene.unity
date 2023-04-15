@@ -404,6 +404,58 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 4bd8a712c4b59b345ad7ba1e53c0af9b, type: 2}
+--- !u!1 &874710725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874710727}
+  - component: {fileID: 874710726}
+  m_Layer: 0
+  m_Name: LeftChatMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &874710726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874710725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4745542509048433670, guid: ba98ae435572e03499dff432fe3de530, type: 3}
+  parent: {fileID: 1478648657}
+  colorFadeFactor: 0.91
+  texts: []
+  textLengths: []
+  message: f
+  master: {fileID: 2141112022}
+--- !u!4 &874710727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874710725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1478648662}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214073160
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +509,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &1360288301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6323043078073236117, guid: db89237bd442552409f80f6cb4e8fa57,
+    type: 3}
+  m_PrefabInstance: {fileID: 6323043078896115896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1360288306 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6323043078073236106, guid: db89237bd442552409f80f6cb4e8fa57,
+    type: 3}
+  m_PrefabInstance: {fileID: 6323043078896115896}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1389572437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1200,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468057455}
   m_CullTransparentMesh: 1
+--- !u!1 &1478648657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3811449538523719375, guid: 7b23953e6f215474488575b32b0aa99f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3811449537586398622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1478648662 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3811449538523719368, guid: 7b23953e6f215474488575b32b0aa99f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3811449537586398622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1613604106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1245,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2024301058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2024301060}
+  - component: {fileID: 2024301059}
+  m_Layer: 0
+  m_Name: RightChatMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2024301059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024301058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4745542509048433670, guid: 4fd862e845110e64b8beeb41d6cb32d9, type: 3}
+  parent: {fileID: 1360288301}
+  colorFadeFactor: 0.91
+  texts: []
+  textLengths: []
+  message: d
+  master: {fileID: 2141112022}
+--- !u!4 &2024301060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024301058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1360288306}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2141112022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IDtext: {fileID: 1468057455}
+  incomingChat: {fileID: 874710725}
+  outgoingChat: {fileID: 2024301058}
   rMessage:
     source: 
     destination: 
@@ -1208,6 +1338,7 @@ MonoBehaviour:
     message:
       message_type: 
       message_text: 
+      speaker: 0
 --- !u!114 &2141112024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1242,7 +1373,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 874710727}
     m_Modifications:
     - target: {fileID: 3811449538523719368, guid: 7b23953e6f215474488575b32b0aa99f,
         type: 3}
@@ -1257,7 +1388,7 @@ PrefabInstance:
     - target: {fileID: 3811449538523719368, guid: 7b23953e6f215474488575b32b0aa99f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3811449538523719368, guid: 7b23953e6f215474488575b32b0aa99f,
         type: 3}
@@ -1354,19 +1485,25 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1461660230}
+    - target: {fileID: 3811449538523719372, guid: 7b23953e6f215474488575b32b0aa99f,
+        type: 3}
+      propertyPath: message
+      value: f
+      objectReference: {fileID: 0}
     - target: {fileID: 3811449538523719375, guid: 7b23953e6f215474488575b32b0aa99f,
         type: 3}
       propertyPath: m_Name
       value: LeftChat
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3811449538523719372, guid: 7b23953e6f215474488575b32b0aa99f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7b23953e6f215474488575b32b0aa99f, type: 3}
 --- !u!1001 &6323043078896115896
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2024301060}
     m_Modifications:
     - target: {fileID: 6323043078073236105, guid: db89237bd442552409f80f6cb4e8fa57,
         type: 3}
@@ -1386,7 +1523,7 @@ PrefabInstance:
     - target: {fileID: 6323043078073236106, guid: db89237bd442552409f80f6cb4e8fa57,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6323043078073236106, guid: db89237bd442552409f80f6cb4e8fa57,
         type: 3}
@@ -1483,5 +1620,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightChat
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6323043078073236118, guid: db89237bd442552409f80f6cb4e8fa57,
+        type: 3}
+      propertyPath: message
+      value: d
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6323043078073236118, guid: db89237bd442552409f80f6cb4e8fa57, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db89237bd442552409f80f6cb4e8fa57, type: 3}

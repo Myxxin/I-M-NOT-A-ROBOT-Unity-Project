@@ -1,0 +1,15 @@
+{
+"source":"source",
+"destination":"destination",
+"booth_id":"1",
+"message":{
+	"message_type":"message_type",
+	"message_text":"message_text",
+}
+}
+
+
+
+{"source": "main_controller", "destination": "unity", "booth_id": 1, "speaker":1, "message": {"message_type": "final_text", "message_text": "not but maybe its not.", "speaker":1}}
+
+{"source": "main_controller", "destination": "unity", "booth_id": 1, "speaker":1, "message": {"message_type": "final_text", "message_text": "notwololo its not.", "speaker":2}}

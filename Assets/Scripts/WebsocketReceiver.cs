@@ -319,14 +319,14 @@ public class WebsocketReceiver : MonoBehaviour
     }
 
     IEnumerator StartHipLip(){
-        yield return new WaitForSeconds(6); //51
+        yield return new WaitForSeconds(51); //51
         print("HIP LIp IS COMING!");
         HipSocialPrefab.SetActive(true);
         HipSocialPrefab.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
     }
 
     IEnumerator SendStateUpdate(){
-        yield return new WaitForSeconds(7); //79
+        yield return new WaitForSeconds(79); //79
          ws.Send(JsonUtility.ToJson(unityStateMessage));
         Debug.Log("INTRO DONE - STATE UPDATE SENT"); 
 

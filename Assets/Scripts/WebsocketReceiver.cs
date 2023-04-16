@@ -9,6 +9,7 @@ public class WebsocketReceiver : MonoBehaviour
     WebSocket ws;
     public GameObject IDtext;
     public GameObject cam;
+    public GameObject ErrorVideo;
     
 
     public GameObject incomingChat;
@@ -179,7 +180,7 @@ public class WebsocketReceiver : MonoBehaviour
             //Send State of finished Intro
             //ws.Send(JsonUtility.ToJson(unityStateMessage));
             rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "end_experience_hard_reset";
+            rMessage.message.message_text = "other_booth_hungup";//"end_experience_hard_reset";
         }
 
 
@@ -218,6 +219,7 @@ public class WebsocketReceiver : MonoBehaviour
         IdlePrefab.SetActive(true);
         IdlePrefab.GetComponent<dissolveSDF>().resetLogo();
         cam.GetComponent<UnityEngine.Video.VideoPlayer>().enabled = false;
+        ErrorVideo.GetComponent<UnityEngine.Video.VideoPlayer>().enabled = false;
 
         HipSocialPrefab.GetComponent<changeSDF>().switchToRose();
         HipSocialPrefab.SetActive(false);
@@ -284,6 +286,8 @@ public class WebsocketReceiver : MonoBehaviour
 
             case "other_booth_hungup":
                 Debug.Log("other_booth_hungup");
+                ErrorVideo.GetComponent<UnityEngine.Video.VideoPlayer>().enabled = true;
+                ErrorVideo.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
                 break;
 
 

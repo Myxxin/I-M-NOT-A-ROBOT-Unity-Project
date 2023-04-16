@@ -78,10 +78,10 @@ public class WebsocketReceiver : MonoBehaviour
 
         //======= CONNECT WITH TEST WEBSOCKET =======\\
         //URL: https://socketsbay.com/test-websockets
-        ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
+        //ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
 
         //=======CONNECT WITH OTHER MAC=======\\
-        //ws = new WebSocket("ws://10.0.0.15:8765");
+        ws = new WebSocket("ws://10.0.0.15:8765");
         Debug.Log("Websocket created");
 
         //======= LISTEN TO MESSAGES =======\\
@@ -319,16 +319,16 @@ public class WebsocketReceiver : MonoBehaviour
     }
 
     IEnumerator StartHipLip(){
-        yield return new WaitForSeconds(51); //51
+        yield return new WaitForSeconds(6); //51
         print("HIP LIp IS COMING!");
         HipSocialPrefab.SetActive(true);
         HipSocialPrefab.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
     }
 
     IEnumerator SendStateUpdate(){
-        yield return new WaitForSeconds(79); //79
+        yield return new WaitForSeconds(7); //79
          ws.Send(JsonUtility.ToJson(unityStateMessage));
-        Debug.Log("INTRO DONE - STATE UPDATE SENT");
+        Debug.Log("INTRO DONE - STATE UPDATE SENT"); 
 
     }
 

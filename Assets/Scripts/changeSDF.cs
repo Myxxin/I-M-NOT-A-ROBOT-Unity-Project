@@ -43,7 +43,7 @@ public class changeSDF : MonoBehaviour
 
         emitterVFX.GetComponent<VisualEffect>().SetTexture("SDF", PhoneSdf);
         emitterVFX.GetComponent<VisualEffect>().SetFloat("YForce", 0);
-        emitterVFX.GetComponent<VisualEffect>().SetFloat("SpawnMultiplicator", 150000);
+        emitterVFX.GetComponent<VisualEffect>().SetFloat("SpawnMultiplicator",  85000);
 
 
         
@@ -59,7 +59,7 @@ public class changeSDF : MonoBehaviour
         emitterVFX.GetComponent<VisualEffect>().SetTexture("SDF", RoseSdf);
 
         emitterVFX.GetComponent<VisualEffect>().SetFloat("YForce", 5);
-        emitterVFX.GetComponent<VisualEffect>().SetFloat("SpawnMultiplicator", 75000);
+        emitterVFX.GetComponent<VisualEffect>().SetFloat("SpawnMultiplicator", 10000);
 
         parentVFX.transform.position = new Vector3 (0f, -0.27f, 3.42f);
         parentVFX.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));

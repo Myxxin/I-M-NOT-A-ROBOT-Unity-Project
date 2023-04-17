@@ -180,7 +180,7 @@ public class WebsocketReceiver : MonoBehaviour
             //Send State of finished Intro
             //ws.Send(JsonUtility.ToJson(unityStateMessage));
             rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "start_conversation_mode"; //"other_booth_hungup";//"end_experience_hard_reset";
+            rMessage.message.message_text = "end_experience_hard_reset"; //"other_booth_hungup";//"end_experience_hard_reset";
         }
 
 
@@ -323,7 +323,7 @@ public class WebsocketReceiver : MonoBehaviour
     }
 
     IEnumerator StartHipLip(){
-        yield return new WaitForSeconds(65); //65 = Videolenght (60s) + WaitTime before
+        yield return new WaitForSeconds(6); //65 = Videolenght (60s) + WaitTime before
         print("HIP LIp IS COMING!");
         HipSocialPrefab.SetActive(true);
         HipSocialPrefab.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
@@ -331,7 +331,7 @@ public class WebsocketReceiver : MonoBehaviour
 
     IEnumerator SendStateUpdate(){
         unityStateMessage.state = "intro_finished";
-        yield return new WaitForSeconds(93); //79 = HipLip Length (28s) + WaitTime before
+        yield return new WaitForSeconds(7); //93 = HipLip Length (28s) + WaitTime before
          ws.Send(JsonUtility.ToJson(unityStateMessage));
         Debug.Log("INTRO DONE - STATE UPDATE SENT"); 
 

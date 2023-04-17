@@ -29,7 +29,7 @@ public class aiChat : MonoBehaviour
 
             newText.GetComponent<TMP_Text>().color = Random.ColorHSV(0.33f, 0.3f, 0.9f, 1f, 1f, 1f);
             texts.Add(newText);
-            textLengths.Add(Mathf.Ceil(newText.GetComponent<TMP_Text>().text.Length / 40) + 1);
+            textLengths.Add(Mathf.Ceil(newText.GetComponent<TMP_Text>().text.Length / 40) + 1); //original: ...+1
 
             for ( int i = 0; i < texts.Count -1; i++)
             {
@@ -44,7 +44,7 @@ public class aiChat : MonoBehaviour
                     factor = textLengths[texts.Count -1];    
                 }
     
-                texts[i].transform.position += Vector3.up*(0.1f*factor);
+                texts[i].transform.position += Vector3.up*(0.138f*factor); //original: 0.1f * ...
 
                 for (float u = 0; u < factor; u++){texts[i].GetComponent<TMP_Text>().color *= colorFadeFactor;}
 
@@ -71,8 +71,9 @@ public class aiChat : MonoBehaviour
 
     public void cleanUpChat()
     {
-        print(">> Text Count: " + texts.Count);
+       
         int numberOfTexts = texts.Count;
+         print(">> Text Count: " + numberOfTexts);
         
         for(int i = 0; i < numberOfTexts; i++)
         {

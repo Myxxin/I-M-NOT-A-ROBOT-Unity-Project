@@ -78,10 +78,10 @@ public class WebsocketReceiver : MonoBehaviour
 
         //======= CONNECT WITH TEST WEBSOCKET =======\\
         //URL: https://socketsbay.com/test-websockets
-        //ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
+        ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
 
         //=======CONNECT WITH OTHER MAC=======\\
-        ws = new WebSocket("ws://10.0.0.14:8765");
+        //ws = new WebSocket("ws://10.0.0.14:8765");
         Debug.Log("Websocket created");
 
         //======= LISTEN TO MESSAGES =======\\
@@ -180,7 +180,7 @@ public class WebsocketReceiver : MonoBehaviour
             //Send State of finished Intro
             //ws.Send(JsonUtility.ToJson(unityStateMessage));
             rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "other_booth_hungup";//"end_experience_hard_reset";
+            rMessage.message.message_text = "start_conversation_mode" //"other_booth_hungup";//"end_experience_hard_reset";
         }
 
 
@@ -264,6 +264,7 @@ public class WebsocketReceiver : MonoBehaviour
                 IdlePrefab.SetActive(false);
                 Debug.Log("start_var_intro");
                 HipSocialPrefab.GetComponent<changeSDF>().switchToPhone();
+                StartCoroutine(SendVarStateUpdate());
                 break;
 
                 
@@ -279,6 +280,7 @@ public class WebsocketReceiver : MonoBehaviour
                 Debug.Log("start_conversation_mode");
                 HipSocialPrefab.GetComponent<changeSDF>().fade();
                 convoPrefab.SetActive(true);
+                convoPrefab.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
 
                 break;
 
@@ -321,17 +323,25 @@ public class WebsocketReceiver : MonoBehaviour
     }
 
     IEnumerator StartHipLip(){
-        yield return new WaitForSeconds(51); //51
+        yield return new WaitForSeconds(65); //65 = Videolenght (60s) + WaitTime before
         print("HIP LIp IS COMING!");
         HipSocialPrefab.SetActive(true);
         HipSocialPrefab.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
     }
 
     IEnumerator SendStateUpdate(){
-        yield return new WaitForSeconds(79); //79
+        unityStateMessage.state = "intro_finished";
+        yield return new WaitForSeconds(93); //79 = HipLip Length (28s) + WaitTime before
          ws.Send(JsonUtility.ToJson(unityStateMessage));
         Debug.Log("INTRO DONE - STATE UPDATE SENT"); 
 
+    }
+
+    IEnumerator SendVarStateUpdate(){
+        unityStateMessage.state = "socialbot_ready";
+        yield return new WaitForSeconds(10);
+        ws.Send(JsonUtility.ToJson(unityStateMessage));
+        Debug.Log("SCOCIAL BOT READY - STATE UPDATE SENT"); 
     }
 
 }

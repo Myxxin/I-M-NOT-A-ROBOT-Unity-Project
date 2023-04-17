@@ -12,6 +12,8 @@ public class changeSDF : MonoBehaviour
     public GameObject mainVFX;
     public GameObject emitterVFX;
 
+    public GameObject sound;
+
     
 
     private bool transform = false;
@@ -45,10 +47,9 @@ public class changeSDF : MonoBehaviour
         emitterVFX.GetComponent<VisualEffect>().SetFloat("YForce", 0);
         emitterVFX.GetComponent<VisualEffect>().SetFloat("SpawnMultiplicator",  85000);
 
-
-        
-
         transform = true;
+
+        sound.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
 
     
     }

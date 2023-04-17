@@ -72,7 +72,9 @@ public class aiChat : MonoBehaviour
     public void cleanUpChat()
     {
         print(">> Text Count: " + texts.Count);
-        for(int i = 0; i < texts.Count; i++)
+        int numberOfTexts = texts.Count;
+        
+        for(int i = 0; i < numberOfTexts; i++)
         {
             Destroy(texts[i]);
             texts.RemoveAt(i);

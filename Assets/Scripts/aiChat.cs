@@ -29,7 +29,7 @@ public class aiChat : MonoBehaviour
 
             newText.GetComponent<TMP_Text>().color = Random.ColorHSV(0.33f, 0.3f, 0.9f, 1f, 1f, 1f);
             texts.Add(newText);
-            textLengths.Add(Mathf.Ceil(newText.GetComponent<TMP_Text>().text.Length / 62) + 1);
+            textLengths.Add(Mathf.Ceil(newText.GetComponent<TMP_Text>().text.Length / 40) + 1);
 
             for ( int i = 0; i < texts.Count -1; i++)
             {
@@ -71,12 +71,15 @@ public class aiChat : MonoBehaviour
 
     public void cleanUpChat()
     {
+        print(">> Text Count: " + texts.Count);
         for(int i = 0; i < texts.Count; i++)
         {
             Destroy(texts[i]);
             texts.RemoveAt(i);
             textLengths.RemoveAt(i);
         }
+        print("CHAT CLEANED");
+        print(">> Text Count: " + texts.Count);
 
     }
 

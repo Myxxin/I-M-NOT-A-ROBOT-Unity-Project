@@ -81,7 +81,7 @@ public class WebsocketReceiver : MonoBehaviour
         //ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
 
         //=======CONNECT WITH OTHER MAC=======\\
-        ws = new WebSocket("ws://10.0.0.15:8765");
+        ws = new WebSocket("ws://10.0.0.14:8765");
         Debug.Log("Websocket created");
 
         //======= LISTEN TO MESSAGES =======\\
@@ -118,10 +118,10 @@ public class WebsocketReceiver : MonoBehaviour
                 case "final_text":
                     Debug.Log("It is final text");
                     
-                    //Speaker 1: Incoming, Speaker 2: Outgoing -- has to be different for each booth!
-                    if(rMessage.message.speaker==1){
+                    //Speaker 2: Incoming, Speaker 1: Outgoing 
+                    if(rMessage.message.speaker==2){
                         HandleFinalTextIncoming(rMessage);
-                    }else if(rMessage.message.speaker==2){
+                    }else if(rMessage.message.speaker==1){
                         HandleFinalTextOutgoing(rMessage);
                     }
                     
@@ -274,26 +274,28 @@ public class WebsocketReceiver : MonoBehaviour
 
                 incomingChat.GetComponent<aiChat>().cleanUpChat();
                 outgoingChat.GetComponent<aiChat>().cleanUpChat();
+                print(">>Convo Cleaned");
 
                 Debug.Log("start_conversation_mode");
                 HipSocialPrefab.GetComponent<changeSDF>().fade();
                 convoPrefab.SetActive(true);
 
                 break;
-                 //Social Bot faded raus mit Audio, oder Hip Lip
-                /*Entweder Hip Lip löst sich auf, oder der Social Bot.
-                AI Blob kommt*/
 
             case "other_booth_hungup":
                 Debug.Log("other_booth_hungup");
                 ErrorVideo.GetComponent<UnityEngine.Video.VideoPlayer>().enabled = true;
                 ErrorVideo.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
+                incomingChat.GetComponent<aiChat>().cleanUpChat();
+                outgoingChat.GetComponent<aiChat>().cleanUpChat();
                 break;
 
 
             case "end_experience_hard_reset":
                 StartIdle();
                 Debug.Log("end_experience_hard_reset");
+                incomingChat.GetComponent<aiChat>().cleanUpChat();
+                outgoingChat.GetComponent<aiChat>().cleanUpChat();
                 break;
 
         }

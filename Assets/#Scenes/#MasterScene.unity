@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4745542509048433670, guid: ba98ae435572e03499dff432fe3de530, type: 3}
+  prefab: {fileID: 7124219863163825953, guid: ba98ae435572e03499dff432fe3de530, type: 3}
   parent: {fileID: 1478648657}
   colorFadeFactor: 0.91
   texts: []
@@ -833,7 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4745542509048433670, guid: 4fd862e845110e64b8beeb41d6cb32d9, type: 3}
+  prefab: {fileID: 4593198257678264626, guid: 4fd862e845110e64b8beeb41d6cb32d9, type: 3}
   parent: {fileID: 1360288301}
   colorFadeFactor: 0.91
   texts: []
@@ -1758,7 +1758,7 @@ VisualEffect:
       - m_Value: 5
         m_Name: YForce
         m_Overridden: 1
-      - m_Value: 75000
+      - m_Value: 10000
         m_Name: SpawnMultiplicator
         m_Overridden: 1
     m_Vector2f:

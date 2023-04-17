@@ -180,7 +180,7 @@ public class WebsocketReceiver : MonoBehaviour
             //Send State of finished Intro
             //ws.Send(JsonUtility.ToJson(unityStateMessage));
             rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "start_conversation_mode" //"other_booth_hungup";//"end_experience_hard_reset";
+            rMessage.message.message_text = "start_conversation_mode"; //"other_booth_hungup";//"end_experience_hard_reset";
         }
 
 

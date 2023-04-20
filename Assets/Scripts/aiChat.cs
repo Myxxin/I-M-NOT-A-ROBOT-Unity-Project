@@ -11,12 +11,22 @@ public class aiChat : MonoBehaviour
 
     public List <GameObject> texts;
     public List <float> textLengths;
+    private float textLength;
 
     public string message; 
 
     private Color textColor = new Color(0f, 255f, 0f, 255f);
 
     public GameObject master;
+
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            //pushMessage();
+            //print("key");
+        }
+    }
     
     public void pushMessage()
     {
@@ -29,7 +39,14 @@ public class aiChat : MonoBehaviour
 
             newText.GetComponent<TMP_Text>().color = Random.ColorHSV(0.33f, 0.3f, 0.9f, 1f, 1f, 1f);
             texts.Add(newText);
-            textLengths.Add(Mathf.Ceil(newText.GetComponent<TMP_Text>().text.Length / 40) + 1); //original: ...+1
+            textLength = Mathf.Round(newText.GetComponent<TMP_Text>().text.Length / 23); //original: ...+1
+
+            if (newText.GetComponent<TMP_Text>().text.Length - textLength >= 0)
+            {
+                textLength += 2;
+            }
+
+            textLengths.Add(textLength + 1);
 
             for ( int i = 0; i < texts.Count -1; i++)
             {
@@ -44,7 +61,7 @@ public class aiChat : MonoBehaviour
                     factor = textLengths[texts.Count -1];    
                 }
     
-                texts[i].transform.position += Vector3.up*(0.138f*factor); //original: 0.1f * ...
+                texts[i].transform.position += new Vector3 (0f, 0.04f, 0f)*factor - new Vector3 (0f, 0.005f, 0f)*(factor);
 
                 for (float u = 0; u < factor; u++){texts[i].GetComponent<TMP_Text>().color *= colorFadeFactor;}
 

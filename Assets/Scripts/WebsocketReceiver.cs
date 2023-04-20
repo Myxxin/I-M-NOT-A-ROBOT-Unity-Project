@@ -78,10 +78,10 @@ public class WebsocketReceiver : MonoBehaviour
 
         //======= CONNECT WITH TEST WEBSOCKET =======\\
         //URL: https://socketsbay.com/test-websockets
-        ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
+        //ws = new WebSocket("wss://socketsbay.com/wss/v2/1/demo/");
 
         //=======CONNECT WITH OTHER MAC=======\\
-        //ws = new WebSocket("ws://10.0.0.14:8765");
+        ws = new WebSocket("ws://10.0.0.2:8765");
         Debug.Log("Websocket created");
 
         //======= LISTEN TO MESSAGES =======\\

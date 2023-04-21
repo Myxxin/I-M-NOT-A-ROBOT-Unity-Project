@@ -148,40 +148,40 @@ public class WebsocketReceiver : MonoBehaviour
             Debug.Log("Message send!");
         }*/
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            //Send State of finished Intro
-            //ws.Send(JsonUtility.ToJson(unityStateMessage));
-            rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "play_intro";
-            Debug.Log("Message 2 send!");
-        }
+        // if (Input.GetKeyDown(KeyCode.RightArrow))
+        // {
+        //     //Send State of finished Intro
+        //     //ws.Send(JsonUtility.ToJson(unityStateMessage));
+        //     rMessage.message.message_type = "phase_change";
+        //     rMessage.message.message_text = "play_intro";
+        //     Debug.Log("Message 2 send!");
+        // }
     
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            //Send State of finished Intro
-            //ws.Send(JsonUtility.ToJson(unityStateMessage));
-            rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "start_var_intro";
-        }
+        // if (Input.GetKeyDown(KeyCode.LeftArrow))
+        // {
+        //     //Send State of finished Intro
+        //     //ws.Send(JsonUtility.ToJson(unityStateMessage));
+        //     rMessage.message.message_type = "phase_change";
+        //     rMessage.message.message_text = "start_var_intro";
+        // }
 
         
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            //Send State of finished Intro
-            //ws.Send(JsonUtility.ToJson(unityStateMessage));
-            rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "start_conversation_mode";
-        }
+        // if (Input.GetKeyDown(KeyCode.UpArrow))
+        // {
+        //     //Send State of finished Intro
+        //     //ws.Send(JsonUtility.ToJson(unityStateMessage));
+        //     rMessage.message.message_type = "phase_change";
+        //     rMessage.message.message_text = "start_conversation_mode";
+        // }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //Send State of finished Intro
-            //ws.Send(JsonUtility.ToJson(unityStateMessage));
-            rMessage.message.message_type = "phase_change";
-            rMessage.message.message_text = "end_experience_hard_reset"; //"other_booth_hungup";//"end_experience_hard_reset";
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     //Send State of finished Intro
+        //     //ws.Send(JsonUtility.ToJson(unityStateMessage));
+        //     rMessage.message.message_type = "phase_change";
+        //     rMessage.message.message_text = "end_experience_hard_reset"; //"other_booth_hungup";//"end_experience_hard_reset";
+        // }
 
 
     }

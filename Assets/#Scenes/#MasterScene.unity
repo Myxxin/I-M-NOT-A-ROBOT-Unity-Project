@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1458039240334500753, guid: ba98ae435572e03499dff432fe3de530, type: 3}
+  prefab: {fileID: 8164236955068038717, guid: ba98ae435572e03499dff432fe3de530, type: 3}
   parent: {fileID: 8484698624391120794}
   colorFadeFactor: 0.95
   texts: []
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7101d851de24f345be22195baebe91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4745542509048433670, guid: 4fd862e845110e64b8beeb41d6cb32d9, type: 3}
+  prefab: {fileID: 6138916813686585742, guid: 4fd862e845110e64b8beeb41d6cb32d9, type: 3}
   parent: {fileID: 2605841664755591678}
   colorFadeFactor: 0.95
   texts: []
@@ -1259,7 +1259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3320087588950334234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.5}
+  m_LocalPosition: {x: 0, y: 0, z: 5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1372,10 +1372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 3320087588950334236}
-  - {fileID: 3320087588950334237}
-  - {fileID: 3320087588950334210}
+  m_Bindings: []
   m_VisualEffect: {fileID: 3320087588950334232}
 --- !u!328 &3320087588950334240
 VideoPlayer:
@@ -1578,7 +1575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5493482044166542310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.27, z: 3.42}
+  m_LocalPosition: {x: 0, y: -0.27, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1713,8 +1710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 5493482044356951691}
+  m_Bindings: []
   m_VisualEffect: {fileID: 5493482044356951694}
 --- !u!73398921 &5493482044356951689
 VFXRenderer:

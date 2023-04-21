@@ -32,7 +32,7 @@ public class changeSDF : MonoBehaviour
         if (transform == true && timer < 200)
         {   
             parentVFX.transform.rotation = Quaternion.Lerp(parentVFX.transform.rotation, Quaternion.Euler(new Vector3(48.8f, 75.21f, 92.7f)), 0.01f);
-            parentVFX.transform.position = Vector3.Lerp(parentVFX.transform.position, new Vector3(0f, 0f, 3.42f), 0.01f);
+            parentVFX.transform.position = Vector3.Lerp(parentVFX.transform.position, new Vector3(0f, 0f, 4.5f), 0.01f);
             timer++;
 
         }
@@ -62,7 +62,7 @@ public class changeSDF : MonoBehaviour
         emitterVFX.GetComponent<VisualEffect>().SetFloat("YForce", 5);
         emitterVFX.GetComponent<VisualEffect>().SetFloat("SpawnMultiplicator", 10000);
 
-        parentVFX.transform.position = new Vector3 (0f, -0.27f, 3.42f);
+        parentVFX.transform.position = new Vector3 (0f, -0.27f, 4.5f);
         parentVFX.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
 
         mainVFX.GetComponent<VisualEffect>().SetInt("maxLifeTime", 2);
